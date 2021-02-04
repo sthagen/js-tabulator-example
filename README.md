@@ -6,4 +6,4 @@ Simplistic boilerplate with static embedded data.
 ## Status
 Protoyping.
 
-*Note*: The default branch is default.
+**Note**: The default branch is `default`.
