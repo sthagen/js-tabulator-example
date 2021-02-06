@@ -1,8 +1,8 @@
 {
   "last_page":1,
   "data":[
-    {"id": 1, "name": "Music", "location": "https://google.ch/", "text": "Lorem ipsum very well"},
-    {"id": 2, "name": "Attic", "location": "https://ard.de/", "text": "The red fox jumped into the puddle"}
+    {"id": 1, "name": "Music", "amount": 42, "location": "https://google.ch/", "text": "Lorem ipsum very well"},
+    {"id": 2, "name": "Attic", "amount": 3.14156, "location": "https://ard.de/", "text": "The red fox jumped into the puddle"}
   ],
   "data_version": "2021-02-06T12:34:55Z"
 }
