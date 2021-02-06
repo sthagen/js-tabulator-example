@@ -1,0 +1,7 @@
+{
+  "last_page":1,
+  "data":[
+    {"id": 1, "name": "Music", "location": "https://google.ch/", "version": "2021-02-06T12:34:56Z"},
+    {"id": 2, "name": "Attic", "location": "https://ard.de/", "version": "2021-02-06T12:34:55Z"}
+  ]
+}
