@@ -20,6 +20,9 @@
         data: data,
         height: "311px",
         layout: "fitColumns",
+        dataLoaded:function(data){
+            document.getElementById("data-version").innerText = data[0].version
+        },
         columns: [
             {title: "Name", field: "name"},
             {
@@ -29,8 +32,6 @@
             },
         ],
     });
-    const data_version = table.getData("version")[0].version
-    document.getElementById("data-version").innerText = data_version
 </script>
 </body>
 </html>
