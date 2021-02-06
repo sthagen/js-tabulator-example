@@ -12,13 +12,20 @@
     <div id="example-table"></div>
 </main>
 <script>
+    let data_version = undefined
     const table = new Tabulator("#example-table", {
         ajaxURL: "data.json",
         ajaxProgressiveLoad:"load",
         layout: "fitDataStretch",
         ajaxResponse: function(url, params, response){
-            document.getElementById("data-version").innerText = response.data_version
+            data_version = response.data_version
+            document.getElementById("data-version").innerText = data_version
             return response;
+        },
+        rowFormatter:function(row){
+            if(row.getData().data_version < data_version){
+                row.getElement().classList.add("table-secondary");
+            }
         },
         columns: [
             {title: "Name", field: "name"},
