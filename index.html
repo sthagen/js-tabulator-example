@@ -19,7 +19,7 @@
     const table = new Tabulator("#example-table", {
         data: data,
         height: "311px",
-        layout: "fitColumns",
+        layout: "fitDataStretch",
         dataLoaded:function(data){
             document.getElementById("data-version").innerText = data[0].version
         },
