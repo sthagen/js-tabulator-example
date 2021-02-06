@@ -24,11 +24,12 @@
         },
         rowFormatter:function(row){
             if(row.getData().data_version < data_version){
-                row.getElement().classList.add("table-secondary");
+                row.getElement().classList.add("table-warning");
             }
         },
         columns: [
             {title: "Name", field: "name"},
+            {title: "Amount", field: "amount", bottomCalc: "sum"},
             {
                 title: "Location", field: "location", cellClick: function (e, cell) {
                     window.open(cell.getData().location, '_blank')
