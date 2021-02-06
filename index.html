@@ -6,7 +6,10 @@
     <script src="https://unpkg.com/tabulator-tables@4.9.3/dist/js/tabulator.min.js"></script>
 </head>
 <body>
-<div id="example-table"></div>
+<main>
+    <p>data-version = <span id="data-version">analyzing ...</span></p>
+    <div id="example-table"></div>
+</main>
 <script>
     let data = [
         {"id": 1, "name": "Music", "location": "https://google.ch/", "version": "2021-02-06T12:34:56Z"},
@@ -25,6 +28,8 @@
             },
         ],
     });
+    const data_version = table.getData("version")[0].version
+    document.getElementById("data-version").innerText = data_version
 </script>
 </body>
 </html>
