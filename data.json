@@ -6,14 +6,16 @@
       "name": "Music",
       "amount": 42,
       "location": "https://google.ch/",
-      "text": "Lorem ipsum very well"
+      "text": "Lorem ipsum very well",
+      "data_version": "2021-02-06T12:34:55Z"
     },
     {
       "id": 2,
       "name": "Attic",
       "amount": 3.14156,
       "location": "https://ard.de/",
-      "text": "The red fox jumped into the puddle"
+      "text": "The red fox jumped into the puddle",
+      "data_version": "2021-02-06T12:34:54Z"
     }
   ],
   "data_version": "2021-02-06T12:34:55Z"
