@@ -13,7 +13,7 @@
 </main>
 <script>
     const table = new Tabulator("#example-table", {
-        data: data,
+        ajaxURL: "data.json",
         layout: "fitDataStretch",
         dataLoaded:function(data){
             document.getElementById("data-version").innerText = data[0].version
