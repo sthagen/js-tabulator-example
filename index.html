@@ -16,8 +16,9 @@
         ajaxURL: "data.json",
         ajaxProgressiveLoad:"load",
         layout: "fitDataStretch",
-        dataLoaded:function(data){
-            document.getElementById("data-version").innerText = data[0].version
+        ajaxResponse: function(url, params, response){
+            document.getElementById("data-version").innerText = response.data[0].version
+            return response;
         },
         columns: [
             {title: "Name", field: "name"},
