@@ -38,7 +38,10 @@
         columns: [
             {title: "Name", field: "name"},
             {title: "Progress", field: "poc", formatter:"progress",
-                formatterParams:{ min:0, max:1, color:["red", "amber", "green"], legendColor:"#000000", legendAlign:"center" }
+                formatterParams:{ min:0, max:1, color:["darkgray"], legendColor:"#000000", legendAlign:"center" },
+                bottomCalc:"avg",
+                bottomCalcFormatter:"progress",
+                bottomCalcFormatterParams:{ min:0, max:1, color:["darkseagreen"], legendColor:"#000000", legendAlign:"center" },
             },
             {title: "Name", field: "name"},
             {title: "Amount", field: "amount", hozAlign: "right", formatter:"money",
