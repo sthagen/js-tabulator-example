@@ -93,6 +93,18 @@
                     invalidPlaceholder: "(invalid date)",
                 }
             },
+            {title: "Days remaining", field: "foo", hozAlign: "right",
+                mutator:function(value, data) {
+                    const now = moment(data.modify);
+                    const end = moment(data.due);
+
+                    if (now.isValid()) {
+                        return moment.duration(end.diff(now)).humanize("");
+                    } else {
+                        return "0 days"
+                    }
+                }
+            },
             {
                 title: "Location", field: "location", cellClick: function (e, cell) {
                     window.open(cell.getData().location, '_blank')
