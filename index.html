@@ -17,7 +17,7 @@
         ajaxProgressiveLoad:"load",
         layout: "fitDataStretch",
         ajaxResponse: function(url, params, response){
-            document.getElementById("data-version").innerText = response.data[0].version
+            document.getElementById("data-version").innerText = response.data_version
             return response;
         },
         columns: [
