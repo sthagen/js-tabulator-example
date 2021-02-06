@@ -8,6 +8,8 @@
       "location": "https://google.ch/",
       "text": "Lorem ipsum very well",
       "poc": 0.95,
+      "modify": "2021-02-01",
+      "due": "2021-02-12",
       "data_version": "2021-02-06T12:34:55Z"
     },
     {
@@ -17,6 +19,8 @@
       "location": "https://ard.de/",
       "text": "The red fox jumped into the puddle",
       "poc": 0.31456,
+      "modify": "2021-02-01",
+      "due": "2021-02-02",
       "data_version": "2021-02-06T12:34:54Z"
     }
   ],
