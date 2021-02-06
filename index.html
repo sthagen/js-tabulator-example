@@ -37,22 +37,11 @@
         },
         columns: [
             {title: "Name", field: "name"},
-            {title: "Amount", field: "amount", hozAlign: "right", formatter:"money", formatterParams:{
-                    decimal:"",
-                    thousand:".",
-                    symbol:"",
-                    symbolAfter:"p",
-                    precision:2,
-                },
+            {title: "Amount", field: "amount", hozAlign: "right", formatter:"money",
+                formatterParams:{ decimal:"", thousand:".", symbol:"", symbolAfter:"p", precision:2, },
                 bottomCalc: "sum",
                 bottomCalcFormatter:"money",
-                bottomCalcFormatterParams:{
-                    decimal:"",
-                    thousand:".",
-                    symbol:"",
-                    symbolAfter:"p",
-                    precision:2,
-                }
+                bottomCalcFormatterParams:{ decimal:"", thousand:".", symbol:"", symbolAfter:"p", precision:2, },
             },
             {
                 title: "Location", field: "location", cellClick: function (e, cell) {
